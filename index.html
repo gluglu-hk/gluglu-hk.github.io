@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta data-n-head="ssr" name="renderer" content="webkit">
+  <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>网站升级......</title>
+  <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .bg  {
+            width: 100%;
+            height: 100%;
+            /*object-fit: cover;*/
+        }
+        .body-container {
+            background-color: #000;
+            position: relative;
+        }
+  </style>
+</head>
+
+<body class="body-container">
+        <img class="bg" src="static/cocoachina.jpeg" />
+        <div style="width: 100%;height: 30px;display: flex;justify-content: center;align-items: center;margin-top: 0;position: absolute;bottom: 0;">
+            <a href="" style="color: #fff;text-decoration: none;" target="_blank">TransICP备11006515号-1</a >
+        </div>
+        <!-- <p id="countDownCon">00:00:00</p>
+        <p class="text">Website upgrading…</p> -->
+        <!-- <ul>Dear users, </ul>
+        <ul>We will extend the update by 1 hour before reopening our market due to the upgrade of major features. </ul> -->
+   
+    
+    <!-- <script>
+        
+        let endDate = (new Date("2021-05-21 11:00:00"))
+        let timer = null
+        const countDown = function (nowStamp, endStamp) {
+            let nowtime = new Date(nowStamp);
+            let endtime = new Date(endStamp);
+            let lefttime = parseInt(Number(endtime.getTime() - nowtime.getTime()) / 1000, 0);
+            let d = parseInt(lefttime / (24 * 60 * 60), 0);
+            let h = parseInt((lefttime / (60 * 60)) % 24, 0);
+            let m = parseInt((lefttime / 60) % 60, 0);
+            let s = parseInt(lefttime % 60, 0);
+            d = addZero(d);
+            h = addZero(h);
+            m = addZero(m);
+            s = addZero(s);
+            return {
+                d,
+                h,
+                m,
+                s
+            };
+        };
+        const addZero = function (i) {
+            return i < 10 ? '0' + i : i + '';
+        };
+        let countDownConDom = document.getElementById('countDownCon')
+        function tickFn () {
+            let timeCon = ''
+            timer = setTimeout(()=>{
+                let startDate = new Date()
+                let startDateStamp = new Date().getTime()
+                let endDateStamp = endDate.getTime()
+                let { d, h, m, s } = countDown(startDate, endDate)
+                timeCon = `${h}:${m}:${s}`
+                if (endDateStamp - startDateStamp >= 0) {
+                    countDownConDom.innerHTML = timeCon
+                    tickFn()
+                } else {
+                    clearTimeout(timer)
+                    countDownConDom.innerHTML = '00:00:00'
+                }
+                
+            }, 1000)
+        }
+        tickFn()
+    </script> -->
+</body>
+
+</html>
+
